@@ -1,20 +1,24 @@
-* {box-sizing: content-box;}
+* {
+  box-sizing: content-box;
+}
 
 header {
   color: white;
   background-color: #343330;
   text-align: center;
 }
+
 nav {
   border: 6px solid #343330;
   background-color: powderblue;
   padding-left: 10px;
+  margin-right: 50%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
-  font-family:'Times New Roman', Times, serif;
-  font-size:110%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 110%;
   background-color: #FCF7F8;
 }
 
@@ -23,18 +27,36 @@ footer {
   color: white;
   text-align: center;
   text-shadow: 2px 2px black;
-  margin:0%
+  margin: 0%
 }
 
-img {
-  height: 200px;
+.crop {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: double;
+  border-color: white;
+  border-width: 8px;
+}
+
+.amanda {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
   width: auto;
+  text-align: center;
 }
 
 .icons {
   height: 70px;
   width: 70px;
-margin: auto;
+  margin: auto;
 }
 
 ul.nav_menu {
@@ -43,4 +65,11 @@ ul.nav_menu {
 
 ul.skill_list {
   list-style-type: square;
+}
+
+h2 {
+  font-size: 40px;
+  background-color: #ccc;
+  margin: 20px;
+  padding: 40px;
 }
