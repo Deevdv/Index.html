@@ -2,13 +2,6 @@
   box-sizing: content-box;
 }
 
-body {
-  font-family: "lato", sans-serif;
-  font-size: 110%;
-  background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1.0), rgba(222, 222, 222, 1.0));
-  color: #343330;
-}
-
 header {
   letter-spacing: 5px;
   background-color: #343330;
@@ -19,6 +12,47 @@ header {
   justify-content: center;
   padding: 20px;
   transition: 1.5s;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  font-size: 110%;
+  background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1.0), rgba(222, 222, 222, 1.0));
+  color: #343330;
+}
+
+.sideBar {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: sticky;
+  position: -webkit-sticky;
+  background: rgb(144, 131, 170);
+  width: 20%;
+  height: 100%;
+  top: 0%;
+  padding: 10px;
+}
+
+.navSelections {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font: 16px "lato", sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  transition: 1.5s;
+  line-height: 30px;
+}
+
+.navSelections:hover {
+  transition: 1.5s;
+  color: black;
+}
+
+.navMenu {
+  overflow: hidden;
+  text-align: left;
+  transition: 1.5s;
+  display: contents;
 }
 
 .crop {
@@ -44,20 +78,10 @@ header {
   text-align: center;
 }
 
-.main {
-  display: flex;
-  flex-direction: row;
-  overflow: unset;
-}
-
-.sideBar {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position: sticky;
-  position: -webkit-sticky;
-  background: rgb(144, 131, 170);
-  width: 20%;
-  height: 100%;
-  padding: 10px;
+.icons {
+  height: 70px;
+  width: 70px;
+  margin: auto;
 }
 
 h2 {
@@ -75,14 +99,8 @@ h2 {
   margin-left: 0;
 }
 
-.navMenu {
-  overflow: hidden;
-  text-align: left;
-  transition: 1.5s;
-  display: contents;
-}
-
 ul.navMenu {
+
   list-style: none;
   padding: 10%;
   letter-spacing: 5px;
@@ -91,25 +109,10 @@ ul.navMenu {
   color: #fff;
 }
 
-.navSelections {
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font: 16px "lato", sans-serif;
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  transition: 1.5s;
-  line-height: 30px;
-}
-
-.navSelections:hover {
-  transition: 1.5s;
-  color: black;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(147, 105, 223);
+.main {
+  display: flex;
+  flex-direction: row;
+  overflow: unset;
 }
 
 .qualifications {
@@ -157,14 +160,14 @@ a {
   transition: 1.5s;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(147, 105, 223);
+}
+
 .info {
   font: 30px "lato", sans-serif;
   text-align: center;
-}
-
-.styleUp {
-  position: absolute;
-  margin-top: 70vh;
 }
 
 .language {
@@ -178,15 +181,17 @@ a {
   position: relative;
 }
 
+.styleUp {
+  position: absolute;
+  margin-top: 70vh;
+}
+
 .lang {
   position: relative;
   bottom: 10px;
 }
 
-.icons {
-  height: 70px;
-  width: 70px;
-  margin: auto;
+.anchorIcons {
   text-decoration: none;
 }
 
@@ -200,18 +205,3 @@ footer {
   margin: 0%;
   padding-top: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
