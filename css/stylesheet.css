@@ -33,6 +33,7 @@ header {
   text-decoration: none;
   color: #fff;
   transition: 1.5s;
+  line-height: 30px;
 }
 
 .navSelections:hover {
@@ -102,7 +103,7 @@ h2 {
   padding: 10%;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font: 19px "lato", sans-serif;
+  font: 20px "lato", sans-serif;
   color: #fff;
   padding: 20px;
   float: inline-start;
@@ -177,5 +178,39 @@ ul.navMenu {
   background-color: #343330;
   padding-left: 8px;
   transition: 1.5s;
+
+}
+
+a {
+  text-decoration: none;
+  color: rgb(147, 105, 223);
+}
+
+.info {
+  font: 30px "lato", sans-serif;
+  text-align: center;
+}
+
+.language {
+  font: 30px "lato", sans-serif;
+  text-align: center;
+}
+
+.flags {
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+
+
+.up {
+  position: absolute;
+  margin-top: 95vh;
+
+}
+
+.lang {
+  position: relative;
+  bottom: 10px;  
 
 }
