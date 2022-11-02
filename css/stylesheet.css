@@ -11,16 +11,17 @@ header {
   text-align: center;
   justify-content: center;
   padding: 20px;
+  transition: 1.5s;
 }
 
 .sideBar {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: sticky;
   position: -webkit-sticky;
-  background: #ccc;
+  background: rgb(144, 131, 170);
   width: 20%;
   height: 100%;
-  top: 0;
+  top: 0%;
   padding: 10px;
 }
 
@@ -40,17 +41,18 @@ header {
 }
 
 .navMenu {
-  background-color: mediumslateblue;
   overflow: hidden;
   text-align: left;
-  padding: 20px;
   transition: 1.5s;
+  display: contents;
+
 }
 
 body {
   font-family: "lato", sans-serif;
   font-size: 110%;
-  background-color: #FCF7F8;
+  background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1.0), rgba(222, 222, 222, 1.0));
+  color: #343330;
 }
 
 
@@ -95,14 +97,12 @@ footer {
 }
 
 h2 {
-  font-size: 40px;
-  background-color: #ccc;
+  background-color: rgb(144, 131, 170);
   text-align: left;
   padding: 10%;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font: 16px "lato", sans-serif;
-  text-decoration: none;
+  font: 19px "lato", sans-serif;
   color: #fff;
   padding: 20px;
   float: inline-start;
@@ -147,12 +147,13 @@ ul.navMenu {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  background-color: #f1f1f1;
+  background-color: rgb(230, 221, 248);
+  margin: 0%;
 }
 
 .flex-container>div {
   font: 14px "lato", sans-serif;
-  background-color: mediumslateblue;
+  background-color: rgb(144, 131, 170);
   color: white;
   margin: 10px;
   padding-left: 2%;
@@ -162,7 +163,7 @@ ul.navMenu {
   letter-spacing: 3px;
 }
 
-.icon{
+.icon {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -170,7 +171,7 @@ ul.navMenu {
   letter-spacing: 5px;
   font: 16px "lato", sans-serif;
   text-decoration: none;
-  color:#fff;
+  color: #fff;
   line-height: 300%;
   padding-bottom: 100px;
   background-color: #343330;
