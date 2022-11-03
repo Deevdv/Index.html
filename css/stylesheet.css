@@ -16,7 +16,6 @@ header {
 
 body {
   font-family: "lato", sans-serif;
-  font-size: 110%;
   background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1.0), rgba(222, 222, 222, 1.0));
   color: #343330;
 }
