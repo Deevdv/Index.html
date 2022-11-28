@@ -1,6 +1,7 @@
 * {
   box-sizing: content-box;
 }
+
 /*header formatting*/
 
 header {
@@ -19,8 +20,10 @@ header {
 
 body {
   font-family: "lato", sans-serif;
-  font-size: 110%;
   background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1.0), rgba(222, 222, 222, 1.0));
+  background-image: url("/images/background.jpg");
+  background-position: left;
+  font-size: 110%;;
   color: #343330;
 }
 
@@ -60,31 +63,15 @@ body {
   display: contents;
 }
 
-/*.crop for image*/
-
-.crop {
-  height: 100px;
-  width: 100px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: double;
-  border-color: mediumslateblue;
-  border-width: 8px;
-}
-
 /*formatting for .displayPicture*/
 
 .displayPicture {
-  display: inline;
-  margin: 0 auto;
-  margin-left: -25%;
-  height: 100%;
-  width: auto;
-  text-align: center;
+  display: flex;
+  height: 300px;
+  width: 150px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*h2 formatting*/
@@ -232,7 +219,7 @@ p {
 .icons {
   height: 70px;
   width: 70px;
-  margin: auto; 
+  margin: auto;
   text-decoration: none;
 }
 

@@ -4,6 +4,8 @@
 <head>
   <script src="https://kit.fontawesome.com/1f910b8ff8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/stylesheet.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Dané van der Vorst </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -15,13 +17,19 @@
 <body>
   <!--header includes a headshot and brief description-->
   <header id="heading">
-    <div class="crop">
-      <img id="headshot" src="images/headshot.jpeg" alt="Picture of D van der Vorst" class="displayPicture">
+    <div>
+      <picture class="displayPicture">
+        <source media="(max-width: 650px)" srcset="images/headshotSmall.png">
+        <source media="(max-width: 1000px)" srcset="images/headshotLarge.png">
+         <img src="images/headshot.jpeg" class="displayPic" alt="Picture of D van der Vorst">
+      </picture>
     </div>
     <h1>Dané van der Vorst</h1>
     <p>My personality comprises of; being an individual who prides themselves in being enthusiastic, passionate and
       willing to learn</p>
   </header>
+
+
 
   <main class="main">
 
