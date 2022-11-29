@@ -128,7 +128,6 @@ ul.navMenu {
   flex-direction: column;
   align-items: stretch;
   background-color: rgb(230, 221, 248);
-  margin: 0%;
 }
 
 .flexContainer>div {
@@ -183,6 +182,7 @@ a {
 /*language heading formatting*/
 
 .language {
+  padding-top: 150px;
   font: 30px "lato", sans-serif;
   text-align: center;
 }
@@ -250,7 +250,7 @@ footer {
     padding-right: 10px;
   }
   .info {
-    display: inline-block;
+    display: flex;
     font: 20px "lato", sans-serif;
     text-align: left
   }
@@ -265,7 +265,54 @@ footer {
     padding-bottom: 50px;
     background-color: #343330;
     transition: 1.5s;
+  }  
+  .language {
+    display: flex;
+    width: 20px;
+    font: 13px "lato", sans-serif;
+    text-align: left;
+    margin-left: 0;
+    padding-top: 50px;
   }
 
+}
+/*screen resizing max-width 550px*/
+
+@media screen and (max-width: 550px) {
+  #div {
+    display: inline-block;
+  }
+  .navSelections {
+    letter-spacing: 3px;
+    font: 10px "lato", sans-serif;
+    display: inline-block;
+    }
+    .info {
+      display: flex;
+      width: 20px;
+      margin-left: 0;
+      font: 13px "lato", sans-serif;
+      text-align: left
+    }
+    .iconInfo {
+      display: flex;
+      width: auto;
+      letter-spacing: 5px;
+      font: 10px "lato", sans-serif;
+      text-decoration: none;
+      color: #fff;
+      line-height: 300%;
+      padding-bottom: 50px;
+      background-color: #343330;
+      transition: 1.5s;
+    }  
+    .language {
+      display: flex;
+      width: 20px;
+      font: 13px "lato", sans-serif;
+      text-align: left;
+      margin-left: 0;
+      padding-top: 50px;
+    }
   
 }
