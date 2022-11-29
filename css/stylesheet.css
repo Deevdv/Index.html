@@ -30,11 +30,10 @@ body {
 /*.sidebar formatting incl.: .navSelections, navSelections:hover, navMenu & ul.navMenu*/
 
 .sideBar {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: sticky;
   position: -webkit-sticky;
   background: rgb(144, 131, 170);
-  width: 20%;
+  width: 20;
   height: 100%;
   top: 0%;
   padding: 10px;
@@ -234,4 +233,39 @@ footer {
   text-align: center;
   margin: 0%;
   padding-top: 50px;
+}
+
+/*screen resizing max-width 768px*/
+
+@media screen and (max-width: 768px){
+  #div {
+    display: inline-block;
+  }
+  .navSelections {
+  letter-spacing: 3px;
+  font: 10px "lato", sans-serif;
+  display: inline-block;
+  }
+  #h2 {
+    padding-right: 10px;
+  }
+  .info {
+    display: inline-block;
+    font: 20px "lato", sans-serif;
+    text-align: left
+  }
+  .iconInfo {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 5px;
+    font: 13px "lato", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    line-height: 300%;
+    padding-bottom: 50px;
+    background-color: #343330;
+    transition: 1.5s;
+  }
+
+  
 }
