@@ -12,7 +12,6 @@ header {
   color: #fff;
   text-align: center;
   justify-content: center;
-  padding: 20px;
   transition: 1.5s;
 }
 
@@ -64,7 +63,7 @@ body {
 
 /*formatting for .displayPicture*/
 
-.displayPicture {
+#displayPicture {
   display: flex;
   height: 300px;
   width: 150px;
@@ -85,7 +84,6 @@ h2 {
   color: #fff;
   padding: 20px;
   float: inline-start;
-  margin-left: 5px;
   transition: 1.5s;
   margin-left: 0;
 }
@@ -220,6 +218,7 @@ p {
   width: 70px;
   margin: auto;
   text-decoration: none;
+  margin-bottom: 50px;
 }
 
 /*footer formatting*/
@@ -266,16 +265,16 @@ footer {
     background-color: #343330;
     transition: 1.5s;
   }  
-  .language {
-    display: flex;
-    width: 20px;
-    font: 13px "lato", sans-serif;
-    text-align: left;
-    margin-left: 0;
-    padding-top: 50px;
-  }
-
+    .language {
+      display: flex;
+      width: 20px;
+      font: 13px "lato", sans-serif;
+      text-align: left;
+      margin-left: 0;
+      padding-top: 50px;
+    }
 }
+
 /*screen resizing max-width 550px*/
 
 @media screen and (max-width: 550px) {
