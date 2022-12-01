@@ -41,18 +41,35 @@
     </div>
   </div>
 
-  <main class="main">
-    <div class="sideBar">
-      <nav>
-        <h2 id="menu">Menu</h2>
-        <ul class="navMenu">
-          <li><a href="#education" class="navSelections">Education</a></li>
-          <li><a href="#experience" class="navSelections">Experience</a></li>
-          <li><a href="#skills" class="navSelections">Skills</a></li>
-          <li><a href="#details" class="navSelections">Contact Details</a></li>
-        </ul>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#education">Education <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="#personal">Personal Info</a>
+          </li>
+          <a class="nav-link" href="#details">Contact Details</a>
+        </li>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
+  </nav> 
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -140,9 +157,14 @@
         </nav>
       </div>
     </div>
+         
     <!--icons linked in the head section-->
+  
+<div  class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6">
 
-    <div class="iconInfo">
+    <div id="personal" class="iconInfo">
       <h3 class="info">Personal Info</h3>
       <i class="fa-solid fa-house"></i>32 Edgecliff Dr, Kloof
       <i class="fa-solid fa-calendar-days"></i>D.O.B: 12/04/1997
@@ -150,39 +172,23 @@
       <i class="fa-solid fa-id-card"></i>Driving Licence
       <i class="fa-solid fa-car"></i>Personal vehicle
       <i class="fa-solid fa-phone"></i>0798940672
-
-      <!--multiple divs used to align flag images and text-->
-
-      <div class="styleUp">
-        <h3 class="language">Dialects</h3>
-        <div>
-          <span><img id="countriesA" class="flags" src="images/uk.png" alt="UK Flag"></span>
-          <span class="lang">English - Fluent</span>
-        </div>
-        <span> <img id="countriesB" class="flags" src="images/france.png" alt="French Flag"></span>
-        <span class="lang">French - Inter.</span>
-        <div>
-          <span><img id="countriesC" class="flags" src="images/southafrica.png" alt="South African Flag"></span>
-          <span class="lang">Afrikaans - Inter.</span>
-          <div>
-            <span><img id="countriesD" class="flags" src="images/southafrica.png" alt="South African Flag"></span>
-            <span class="lang">isiZulu - Basic</span>
-          </div>
-        </div>
-      </div>
     </div>
+    </div>
+  </div>
 
-  </main>
+  <div class="col-sm-6">
+    <div id="langauge" class="lang">
+     english
+    </div>
   </div>
-  </div>
+
   <!--footer includes icons with links-->
-  <div class="container-fluid">
-    <div class="row">
 
 
       <footer id="details">
         <h1>Contact Details</h1>
-
+  <div class="container-fluid">
+    <div class="row">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -200,11 +206,8 @@
               </a>
             </div>
           </div>
-        </div>
-
       </footer>
-    </div>
-  </div>
+  </main>
 </body>
 
 </html>
