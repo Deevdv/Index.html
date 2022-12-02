@@ -6,7 +6,7 @@
 
 header {
   letter-spacing: 5px;
-  background-color: #343330;
+  background-color: #6c757d;
   font: 16px "lato", sans-serif;
   text-decoration: none;
   color: #fff;
@@ -19,47 +19,15 @@ header {
 
 body {
   font-family: "lato", sans-serif;
-  background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1.0), rgba(222, 222, 222, 1.0));
-  background-image: url("/images/background.jpg");
   background-position: left;
   font-size: 110%;;
-  color: #343330;
+  color: #6c757d;
 }
 
-/*.sidebar formatting incl.: .navSelections, navSelections:hover, navMenu & ul.navMenu*/
-
-.sideBar {
-  position: sticky;
-  position: -webkit-sticky;
-  background: rgb(144, 131, 170);
-  width: 20;
-  height: 100%;
-  top: 0%;
-  padding: 10px;
+.background {
+  background-image: url("/images/background.jpg")!important;
 }
 
-.navSelections {
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font: 15px "lato", sans-serif;
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  transition: 1.5s;
-  line-height: 30px;
-}
-
-.navSelections:hover {
-  transition: 1.5s;
-  color: black;
-}
-
-.navMenu {
-  overflow: hidden;
-  text-align: left;
-  transition: 1.5s;
-  display: contents;
-}
 
 /*formatting for .displayPicture*/
 
@@ -88,163 +56,7 @@ h2 {
   margin-left: 0;
 }
 
-ul.navMenu {
-
-  list-style: none;
-  padding: 10%;
-  letter-spacing: 5px;
-  font: 16px "lato", sans-serif;
-  text-decoration: none;
-  color: #fff;
-}
-
-/*.main formatting with flex*/
-
-.main {
-  display: flex;
-  flex-direction: row;
-  overflow: unset;
-}
-
-.qualifications {
-  display: flex;
-  flex-flow: wrap;
-}
-
-/*description under h3 formatting*/
-
-.description {
-  color: mediumslateblue;
-  margin-left: 10px;
-}
-
-/*.flexContainer used to style #skills*/
-
-.flexContainer {
-
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  background-color: rgb(230, 221, 248);
-}
-
-.flexContainer>div {
-  font: 14px "lato", sans-serif;
-  background-color: rgb(144, 131, 170);
-  color: white;
-  margin: 10px;
-  padding-left: 2%;
-  text-align: left;
-  line-height: 30px;
-  flex-grow: calc(50);
-  letter-spacing: 3px;
-}
-
-/*added flex to create a right sidebar & text formatting*/
-
-.iconInfo {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  letter-spacing: 5px;
-  font: 16px "lato", sans-serif;
-  text-decoration: none;
-  color: #fff;
-  line-height: 300%;
-  padding-bottom: 100px;
-  background-color: #343330;
-  padding-left: 8px;
-  transition: 1.5s;
-}
-
-/*h3 formatting*/
-
-h3 {
-  margin-left: 10px;
-}
-
-/*anchor tag formatting*/
-
-a {
-  text-decoration: none;
-  color: rgb(147, 105, 223);
-}
-
-/*personal info heading formatting*/
-
-.info {
-  font: 30px "lato", sans-serif;
-  text-align: center;
-}
-
-/*language heading formatting*/
-
-.language {
-  padding-top: 150px;
-  font: 30px "lato", sans-serif;
-  text-align: center;
-}
-
-/*flag img formatting*/
-
-.flags {
-  height: 30px;
-  width: 30px;
-  position: relative;
-}
-
-/*.styleUp used to .language text upwards*/
-
-.styleUp {
-  position: absolute;
-  margin-top: 75vh;
-}
-
-.lang {
-  position: relative;
-  bottom: 10px;
-}
-
-/*paragraph formatting*/
-
-p {
-  margin-left: 10px;
-}
-
-/*.icon formatting*/
-
-.icons {
-  height: 70px;
-  width: 70px;
-  margin: auto;
-  text-decoration: none;
-  margin-bottom: 50px;
-}
-
-/*footer formatting*/
-
-footer {
-  background-color: #343330;
-  letter-spacing: 5px;
-  font: 16px "lato", sans-serif;
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
-}
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-
-body{
-  background: #e1ecf2;
-}
+/*navbar formatting*/
 
 .wrapper{
   margin: 10px;
@@ -408,6 +220,246 @@ body{
   margin-left: 70px;
 }
 
+/*.main formatting with flex*/
+
+.main {
+  display: flex;
+  flex-direction: row;
+  overflow: unset;
+}
+
+.qualifications {
+  display: flex;
+  flex-flow: wrap;
+}
+
+/*description under h3 formatting*/
+
+.description {
+  color: mediumslateblue;
+  margin-left: 10px;
+}
+
+/*.flexContainer used to style #skills*/
+
+.flexContainer {
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: rgb(230, 221, 248);
+}
+
+.flexContainer>div {
+  font: 14px "lato", sans-serif;
+  background-color: rgb(144, 131, 170);
+  color: white;
+  margin: 10px;
+  padding-left: 2%;
+  text-align: left;
+  line-height: 30px;
+  flex-grow: calc(50);
+  letter-spacing: 3px;
+}
+
+/*added flex & text formatting for personal info*/
+
+.iconInfo {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  letter-spacing: 2px;
+  color: #fff;
+  line-height: 300%;
+  padding-bottom: 10px;
+  background-color: #6c757d;
+  padding-left: 10px;
+  padding-top: 10px;
+  transition: 1.5s;
+}
+/*languages formatting*/
+
+.lang {
+  text-align: center;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #6c757d;
+  padding-top: 10px;
+  transition: 1.5s;
+  padding-bottom: 80px;
+}
+
+/*interests formatting*/
+.inter {
+  color: #fff;
+  padding-top: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.interest {
+  display: flex;
+  flex-direction: column;
+}
+
+/*h3 formatting*/
+
+h3 {
+  margin-left: 10px;
+}
+
+/*card formatting*/
+
+.card {
+  height: 10px;
+  width: 130px;
+  background-color: #6c757d;
+}
+
+/*anchor tag formatting*/
+
+a {
+  text-decoration: none;
+  color: rgb(147, 105, 223);
+}
+
+/*personal info heading formatting*/
+
+.info {
+  font: 30px "lato", sans-serif;
+  text-align: center;
+}
+
+/*paragraph formatting*/
+
+p {
+  margin-left: 10px;
+}
+
+/*name formatting/animation*/
+
+.animated-text {
+  background-image: -webkit-linear-gradient(rgb(96, 80, 116) 50%, rgb(255, 255, 255) 50%);
+  background-size: 100% 50px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: stripes 2s linear infinite;
+  animation: stripes 2s linear infinite;
+  font-size: 60px;
+}
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+/*h4 formatting*/
+
+h4 {
+
+  background-color: rgb(147, 105, 223);
+}
+
+/*flag formatting*/
+
+.flags {
+  height: 100px;
+  width: 110px;
+}
+
+/*.icon formatting*/
+
+.icons {
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  text-decoration: none;
+  margin-bottom: 60px;
+}
+/* The flip box container*/
+.flip-box {
+  background-color: transparent;
+  width: 150px;
+  height: 100px;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color:#6c757d;
+  color: white;
+  transform: rotateY(180deg);
+  padding-bottom: 30px;
+}
+
+
+/*footer formatting*/
+
+footer {
+  background-color: #6c757d;
+  letter-spacing: 5px;
+  font: 16px "lato", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding-top: 0%;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: #e1ecf2;
+}
+
+
+
 /*screen resizing max-width 768px*/
 
 @media screen and (max-width: 768px){
@@ -426,28 +478,14 @@ body{
     display: flex;
     font: 20px "lato", sans-serif;
     text-align: left
-  }
-  .iconInfo {
-    display: flex;
-    flex-direction: column;
-    letter-spacing: 5px;
-    font: 13px "lato", sans-serif;
-    text-decoration: none;
-    color: #fff;
-    line-height: 300%;
-    padding-bottom: 50px;
-    background-color: #343330;
-    transition: 1.5s;
-  }  
-    .language {
-      display: flex;
-      width: 20px;
-      font: 13px "lato", sans-serif;
-      text-align: left;
-      margin-left: 0;
-      padding-top: 50px;
-    }
-}
+  } 
+    .navbar-nav mr-auto{
+      padding:0.5rem 2rem;
+    }  
+     .navbar-nav mr-auto{
+         flex-flow:column nowrap;
+       }
+     }
 
 /*screen resizing max-width 550px*/
 
@@ -466,26 +504,6 @@ body{
       margin-left: 0;
       font: 13px "lato", sans-serif;
       text-align: left
-    }
-    .iconInfo {
-      display: flex;
-      width: auto;
-      letter-spacing: 5px;
-      font: 10px "lato", sans-serif;
-      text-decoration: none;
-      color: #fff;
-      line-height: 300%;
-      padding-bottom: 50px;
-      background-color: #343330;
-      transition: 1.5s;
-    }  
-    .language {
-      display: flex;
-      width: 20px;
-      font: 13px "lato", sans-serif;
-      text-align: left;
-      margin-left: 0;
-      padding-top: 50px;
     }
   
 }
