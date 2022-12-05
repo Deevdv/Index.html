@@ -45,85 +45,62 @@
         <div class="animated-text">
           Dané van der Vorst
         </div>
-
         <!-- Trigger Modal Component -->
-
         <button id="yes" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#scrollingModal">
-
           About Me:
-
         </button>
-
         <!-- Modal -->
-
         <div class="modal fade" id="scrollingModal" tabindex="-1" aria-labelledby="basicModalLabel" aria-hidden="true">
-
           <div class="modal-dialog modal-dialog-scrollable">
-
             <div class="modal-content">
-
               <div class="modal-header">
-
-                <h5 class="modal-title bg-secondary" id="basicModalLabel">About Me:</h5>
-
+                <h5 class="modal-title" id="basicModalLabel">About Me:</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
               </div>
-
               <div class="modal-body bg-secondary">
                 My personality comprises of; being an individual who prides themselves in being enthusiastic, passionate
                 and
                 willing to learn
-
               </div>
-
               <div class="modal-footer">
-
                 <button type="button" class="btn btn" data-bs-dismiss="modal">Exit</button>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
     </div>
-
-
     </header>
-  </div>
-  </div>
 
-  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-    <a class="navbar-brand" href="#">Menu</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#education">Education <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#personal">Personal Info</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#details">Contact Details</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#language">Languages</a>
-        </li>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#personal">Personal Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#details">Contact Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#language">Languages</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -163,7 +140,10 @@
       <p class="description"><a href="https://ukzn.ac.za/" target="_blank"> <em>University of Kwazulu-Natal,
             Durban</em>
         </a> </p>
-      <p>Class Rep for Reasearch Fundamentals</p>
+        <ul>
+          <li>Majored in: Clinical & Neuropsychology</li>
+          <li>Class Rep for Reasearch Fundamentals</li>
+        </ul>
     </aside>
     <aside>
       <h3>February 2016-November 2018: Bachelor of Social Science (Psychology & Criminology-Distinction Pass)</h3>
@@ -194,13 +174,12 @@
         <h2 id="skills"> Skills </h2>
 
         <!--flexContainer used to create skill list below education-->
-
         <div class="flexContainer">
           <div><strong>Conflict Resolution</strong>-I maintain the ability to resolve conflict fairly and objectively
             where possible.</div>
           <div><strong>Time Efficiency</strong>- Time is crucial, being efficient and staying on track with deadlines
             improve overall quality of work.</div>
-          <div><strong>Leadership</strong>-Ability to work under pressure and take ead when need be.</div>
+          <div><strong>Leadership</strong>-Ability to work under pressure and take the lead when need be.</div>
           <div><strong>Adaptibility and Team Work</strong>-Being able to adapt and understand co-workers is vital,
             team
             management allows for an efficient running company.</div>
@@ -217,7 +196,6 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-2">
-
           <div id="personal" class="iconInfo">
             <h3 class="info">Personal Info</h3>
             <i class="fa-solid fa-calendar-days"></i>D.O.B: 12/04/1997
@@ -226,8 +204,8 @@
             <i class="fa-solid fa-car"></i>Personal vehicle
           </div>
         </div>
-        <!---Language column with flip-box incl.-->
 
+        <!---Language column with flip-box incl.-->
         <div class="col-sm-3">
           <div id="language" class="lang">
             <h3 class="speech">Languages</h3>
@@ -277,17 +255,17 @@
             </div>
           </div>
         </div>
+
         <!--bootstrap cards-->
         <div class="container">
           <div id="interests" class="interest">
             <h3 class="inter">Interests</h3>
-
             <div class="row">
               <div class="col">
                 <div class="card">
                   <img src="images/reading.png" class="book" alt="Picture of animated books">
                   <div class="card-body">
-                    <h5 class="card-title">Reading</h5>
+                    <h5 class="cardR">Reading</h5>
                   </div>
                 </div>
               </div>
@@ -295,7 +273,7 @@
                 <div class="card">
                   <img src="images/writing.png" class="book" alt="Picture of a pen writing on paper">
                   <div class="card-body">
-                    <h5 class="card-title">Writing</h5>
+                    <h5 class="cardW">Writing</h5>
                   </div>
                 </div>
               </div>
@@ -303,48 +281,49 @@
                 <div class="card">
                   <img src="images/travel.png" class="book" alt="Picture of a globe">
                   <div class="card-body">
-                    <h5 class="card-title">Travel</h5>
+                    <h5 class="cardT">Travel</h5>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card">
-                  <img src="images/music.png" class="book alt="Picture of headphones and a device playing music">
+                  <img src="images/music.png" class="book alt=" Picture of headphones and a device playing music">
                   <div class="card-body">
-                    <h5 class="card-title">Music</h5>
+                    <h5 class="cardM">Music</h5>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card">
-                  <img src="image/autumn-poolside.jpg" class="card-img-top" alt="...">
+                  <img src="images/training.png" class="book" alt="Picture of a dog doing agiloty training">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="cardD">Dog Training</h5>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card">
-                  <img src="image/autumn-poolside.jpg" class="card-img-top" alt="...">
+                  <img src="images/art.png" class="book" alt="Picture of paint and a paintbrush">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="cardA">Art</h5>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!--footer includes icons with links-->
 
+          <!--footer includes icons with links-->
           <footer id="details">
+
             <!--section: contact -->
             <section class="mb-4">
 
               <!--section heading-->
               <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Details</h2>
+
               <!--section: description-->
               <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
                 contact me!</p>
-
               <div class="row">
 
                 <!--grid column-->
@@ -369,7 +348,6 @@
                           <label for="email" class="">Your email</label>
                         </div>
                       </div>
-                      <!--grid column-->
                     </div>
 
                     <!--grid row-->
@@ -395,7 +373,6 @@
                       </div>
                     </div>
                   </form>
-
                   <div class="text-center text-md-left">
                     <a class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Send</a>
                   </div>
@@ -408,11 +385,9 @@
                     <li><i class="fas fa-map-marker-alt fa-2x"></i>
                       <p>Durban, KwaZulu-Natal</p>
                     </li>
-
                     <li><i class="fas fa-phone mt-4 fa-2x"></i>
                       <p>+27 79 894 0672</p>
                     </li>
-
                     <li><i class="fas fa-envelope mt-4 fa-2x"></i>
                       <p>dvdvorst.7@gmail.com</p>
                     </li>
