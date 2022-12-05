@@ -23,6 +23,14 @@
 </head>
 
 <body>
+  <!--PHP currently not running-->
+  <?php
+  include("mail.php");
+  ?>
+
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to my CV</h1>
+  </div>
   <!--header includes a headshot and brief description-->
   <div class="container-fluid">
     <div class="row">
@@ -37,10 +45,55 @@
         <div class="animated-text">
           Dané van der Vorst
         </div>
-        <p>My personality comprises of; being an individual who prides themselves in being enthusiastic, passionate and
-          willing to learn</p>
-      </header>
+
+        <!-- Trigger Modal Component -->
+
+        <button id="yes" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#scrollingModal">
+
+          About Me:
+
+        </button>
+
+        <!-- Modal -->
+
+        <div class="modal fade" id="scrollingModal" tabindex="-1" aria-labelledby="basicModalLabel" aria-hidden="true">
+
+          <div class="modal-dialog modal-dialog-scrollable">
+
+            <div class="modal-content">
+
+              <div class="modal-header">
+
+                <h5 class="modal-title bg-secondary" id="basicModalLabel">About Me:</h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+              </div>
+
+              <div class="modal-body bg-secondary">
+                My personality comprises of; being an individual who prides themselves in being enthusiastic, passionate
+                and
+                willing to learn
+
+              </div>
+
+              <div class="modal-footer">
+
+                <button type="button" class="btn btn" data-bs-dismiss="modal">Exit</button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
     </div>
+
+
+    </header>
+  </div>
   </div>
 
   <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
@@ -160,112 +213,238 @@
   </div>
 
   <!--icons linked in the head section-->
-<div class="background">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-3">
-
-        <div id="personal" class="iconInfo">
-          <h3 class="info">Personal Info</h3>
-          <i class="fa-solid fa-house"></i>32 Edgecliff Dr, Kloof
-          <i class="fa-solid fa-calendar-days"></i>D.O.B: 12/04/1997
-          <i class="fa-solid fa-flag"></i>South African
-          <i class="fa-solid fa-id-card"></i>Driving Licence
-          <i class="fa-solid fa-car"></i>Personal vehicle
-          <i class="fa-solid fa-phone"></i>0798940672
-        </div>
-      </div>
-      <!---Language column with flip-box incl.-->
-
-      <div class="col-sm-3">
-        <div id="language" class="lang">
-          <h3 class="speech">Languages</h3>
-          <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <img class="flags" src="images/uk.png" alt="UK Flag">
-              </div>
-              <div class="flip-box-back">
-                <h4>English</h4>
-                <p>Fluent</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <img class="flags" src="images/france.png" alt="French Flag" Flag">
-              </div>
-              <div class="flip-box-back">
-                <h4>French</h4>
-                <p>Intermediate</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <img class="flags" src="images/southafrica.png" alt="South African Flag">
-              </div>
-              <div class="flip-box-back">
-                <h4>Afrikaans</h4>
-                <p>Intermediate</p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <img class="flags" src="images/southafrica.png" alt="South African  Flag">
-              </div>
-              <div class="flip-box-back">
-                <h4>isiZulu</h4>
-                <p>Beginner</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div id="interests" class="interest">
-          <h3 class="inter">Interests</h3>
-          <div class="card text-white bg-secondary mb-3">
-            <img class="book" src="images/reading.png" alt="Picture of animated books">
-            <div class="card-body">
-              <h5 class="card-title">Reading</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-  <!--footer includes icons with links-->
-
-  <footer id="details">
-    <h1>Contact Details</h1>
+  <div class="background">
     <div class="container-fluid">
       <div class="row">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
+        <div class="col-sm-2">
+
+          <div id="personal" class="iconInfo">
+            <h3 class="info">Personal Info</h3>
+            <i class="fa-solid fa-calendar-days"></i>D.O.B: 12/04/1997
+            <i class="fa-solid fa-flag"></i>South African
+            <i class="fa-solid fa-id-card"></i>Driving Licence
+            <i class="fa-solid fa-car"></i>Personal vehicle
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a href="mailto:dvdvorst.7@gmail.com" target="_blank">
-                <img id="gmail" class="icons" src="images/gmail_image.png" alt="D van der Vorst Gmail">
-              </a>
+        </div>
+        <!---Language column with flip-box incl.-->
+
+        <div class="col-sm-3">
+          <div id="language" class="lang">
+            <h3 class="speech">Languages</h3>
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img class="flags" src="images/uk.png" alt="UK Flag">
+                </div>
+                <div class="flip-box-back">
+                  <h4>English</h4>
+                  <p>Fluent</p>
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <a href="https://github.com/Deevdv" target="_blank">
-                <img id="github" class="icons" src="images/github_image.png" alt="D van der Vorst Github">
-              </a>
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img class="flags" src="images/france.png" alt="French Flag" Flag">
+                </div>
+                <div class="flip-box-back">
+                  <h4>French</h4>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img class="flags" src="images/southafrica.png" alt="South African Flag">
+                </div>
+                <div class="flip-box-back">
+                  <h4>Afrikaans</h4>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img class="flags" src="images/southafrica.png" alt="South African  Flag">
+                </div>
+                <div class="flip-box-back">
+                  <h4>isiZulu</h4>
+                  <p>Beginner</p>
+                </div>
+              </div>
             </div>
           </div>
-  </footer>
-  </main>
+        </div>
+        <!--bootstrap cards-->
+        <div class="container">
+          <div id="interests" class="interest">
+            <h3 class="inter">Interests</h3>
+
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <img src="images/reading.png" class="book" alt="Picture of animated books">
+                  <div class="card-body">
+                    <h5 class="card-title">Reading</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/writing.png" class="book" alt="Picture of a pen writing on paper">
+                  <div class="card-body">
+                    <h5 class="card-title">Writing</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/travel.png" class="book" alt="Picture of a globe">
+                  <div class="card-body">
+                    <h5 class="card-title">Travel</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="images/music.png" class="book alt="Picture of headphones and a device playing music">
+                  <div class="card-body">
+                    <h5 class="card-title">Music</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="image/autumn-poolside.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="image/autumn-poolside.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--footer includes icons with links-->
+
+          <footer id="details">
+            <!--section: contact -->
+            <section class="mb-4">
+
+              <!--section heading-->
+              <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Details</h2>
+              <!--section: description-->
+              <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
+                contact me!</p>
+
+              <div class="row">
+
+                <!--grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
+                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    <!--grid row-->
+                    <div class="row">
+
+                      <!--grid column-->
+                      <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Your name</label>
+                        </div>
+                      </div>
+
+                      <!--grid column-->
+                      <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Your email</label>
+                        </div>
+                      </div>
+                      <!--grid column-->
+                    </div>
+
+                    <!--grid row-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Subject</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--grid row-->
+                    <div class="row">
+
+                      <!--grid column-->
+                      <div class="col-md-12">
+                        <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2"
+                            class="form-control md-textarea"></textarea>
+                          <label for="message">Your message</label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+
+                  <div class="text-center text-md-left">
+                    <a class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Send</a>
+                  </div>
+                  <div class="status"></div>
+                </div>
+
+                <!--grid column-->
+                <div class="col-md-3 text-center">
+                  <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                      <p>Durban, KwaZulu-Natal</p>
+                    </li>
+
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                      <p>+27 79 894 0672</p>
+                    </li>
+
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                      <p>dvdvorst.7@gmail.com</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <!--section: contact-->
+            <div class="container-fluid">
+              <div class="row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <a href="mailto:dvdvorst.7@gmail.com" target="_blank">
+                        <img id="gmail" class="icons" src="images/gmail_image.png" alt="D van der Vorst Gmail">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="https://github.com/Deevdv" target="_blank">
+                        <img id="github" class="icons" src="images/github_image.png" alt="D van der Vorst Github">
+                      </a>
+                    </div>
+                  </div>
+          </footer>
+          </main>
 </body>
 
 </html>

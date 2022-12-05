@@ -23,11 +23,18 @@ body {
   font-size: 110%;;
   color: #6c757d;
 }
-
+/*background image*/
 .background {
   background-image: url("/images/background.jpg")!important;
 }
 
+.jumbotron {
+  background-color: rgb(144, 131, 170);
+}
+.display-4 {
+  color: #fff;
+  letter-spacing: 5px;
+}
 
 /*formatting for .displayPicture*/
 
