@@ -14,6 +14,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+  <script src="/javascript/myScript.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
@@ -23,10 +25,10 @@
 </head>
 
 <body>
-  <!--PHP currently not running-->
+  <!--PHP currently not running
   <?php
   include("mail.php");
-  ?>
+  ?>-->
 
   <div class="jumbotron">
     <h1 class="display-4">Welcome to my CV</h1>
@@ -45,11 +47,11 @@
         <div class="animated-text">
           Dané van der Vorst
         </div>
-        <!-- Trigger Modal Component -->
+        <!-- trigger Modal Component -->
         <button id="yes" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#scrollingModal">
           About Me:
         </button>
-        <!-- Modal -->
+        <!-- modal -->
         <div class="modal fade" id="scrollingModal" tabindex="-1" aria-labelledby="basicModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
@@ -71,10 +73,13 @@
     </div>
     </header>
 
+    
+    <!--navbar-->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Menu</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -101,325 +106,394 @@
         </div>
       </div>
     </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="contents">
-          <nav>
-            <h2 id="education">Education</h2>
-            <div class="qualifications">
-              <div>
-                <h3> October 2022-Present: Intro to Web at <a href="http://codespace.co.za/"
-                    target="_blank"><em>CodeSpace
-                      Academy</em></a></h3>
-                <p><strong>Software Development</strong>
-                <ul>
-                  <li>Intro to Web</li>
-                  <li>Web Design</li>
-                  <li>Interactive Web Apps</li>
-                  <li>Frontend Frameworks</li>
-                  <li>Realitime Apps</li>
-                  <li>Backend Programming</li>
-                  <li>Databases</li>
-                  <li>Dynamic Web Apps</li>
-                </ul>
-                </p>
+    <div id="top"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contents">
+            <nav>
+              <h2 id="education">Education</h2>
+              <div class="qualifications">
+                <div>
+                  <h3> October 2022-Present: Intro to Web at <a href="http://codespace.co.za/"
+                      target="_blank"><em>CodeSpace
+                        Academy</em></a></h3>
+                  <p><strong>Software Development</strong>
+                  <ul>
+                    <li>Intro to Web</li>
+                    <li>Web Design</li>
+                    <li>Interactive Web Apps</li>
+                    <li>Frontend Frameworks</li>
+                    <li>Realitime Apps</li>
+                    <li>Backend Programming</li>
+                    <li>Databases</li>
+                    <li>Dynamic Web Apps</li>
+                  </ul>
+                  </p>
+                </div>
               </div>
-            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <aside>
-      <h3>February 2020-Present: Masters of Social Science in Psychology</h3>
-      <p class="description"><a href="https://ukzn.ac.za/" target="_blank"> <em>University of Kwazulu-Natal,
-            Durban</em>
-        </a> </p>
-    </aside>
-    <aside>
-      <h3>February 2019-November 2019: Bachelor of Social Science Honours (Psychology-Cum Laude)</h3>
-      <p class="description"><a href="https://ukzn.ac.za/" target="_blank"> <em>University of Kwazulu-Natal,
-            Durban</em>
-        </a> </p>
+      <aside>
+        <h3>February 2020-Present: Masters of Social Science in Psychology</h3>
+        <p class="description"><a href="https://ukzn.ac.za/" target="_blank"> <em>University of Kwazulu-Natal,
+              Durban</em>
+          </a> </p>
+      </aside>
+      <aside>
+        <h3>February 2019-November 2019: Bachelor of Social Science Honours (Psychology-Cum Laude)</h3>
+        <p class="description"><a href="https://ukzn.ac.za/" target="_blank"> <em>University of Kwazulu-Natal,
+              Durban</em>
+          </a> </p>
         <ul>
           <li>Majored in: Clinical & Neuropsychology</li>
           <li>Class Rep for Reasearch Fundamentals</li>
         </ul>
-    </aside>
-    <aside>
-      <h3>February 2016-November 2018: Bachelor of Social Science (Psychology & Criminology-Distinction Pass)</h3>
-      <p class="description"><a href="https://ukzn.ac.za/" target="_blank"> <em>University of Kwazulu-Natal,
-            Durban</em>
-        </a> </p>
-      <ul>
-        <li>6 month tertiary level Management course</li>
-        <li>N6-Industrial Psychology & English</li>
-        <li>N7- Psychology & Criminology</li>
-        <li>Class Rep for Neuropsychology (3rd year)</li>
-      </ul>
-    </aside>
-    <aside>
-      <h3>National Senior Certificate</h3>
-      <p class="description"><a href="https://www.curro.co.za/schools/creston-college-high-school/"
-          target="_blank"><em>Creston College</em></a></p>
-      <p>School qualification completed with a degree level pass</p>
-    </aside>
-    <h2 id="experience">Experience</h2>
-    <h3>March 2015-November 2015: Restaurant Manager</h3>
-    <p class="description"><a href="https://www.facebook.com/PavilionItalianRestaurant/" target="_blank"><em>Pavilion
-          Restaurant</em></a></p>
-    <p>Gap year position before heading to university</p>
-    </nav>
-    <div class="container-fluid">
-      <nav>
-        <h2 id="skills"> Skills </h2>
-
-        <!--flexContainer used to create skill list below education-->
-        <div class="flexContainer">
-          <div><strong>Conflict Resolution</strong>-I maintain the ability to resolve conflict fairly and objectively
-            where possible.</div>
-          <div><strong>Time Efficiency</strong>- Time is crucial, being efficient and staying on track with deadlines
-            improve overall quality of work.</div>
-          <div><strong>Leadership</strong>-Ability to work under pressure and take the lead when need be.</div>
-          <div><strong>Adaptibility and Team Work</strong>-Being able to adapt and understand co-workers is vital,
-            team
-            management allows for an efficient running company.</div>
-          <div><strong>Communication</strong>-Communication is key to understand and to deliver important information.
-            I
-            take pride in the ability to communicate effectively.</div>
-        </div>
+      </aside>
+      <aside>
+        <h3>February 2016-November 2018: Bachelor of Social Science (Psychology & Criminology-Distinction Pass)</h3>
+        <p class="description"><a href="https://ukzn.ac.za/" target="_blank"> <em>University of Kwazulu-Natal,
+              Durban</em>
+          </a> </p>
+        <ul>
+          <li>6 month tertiary level Management course</li>
+          <li>N6-Industrial Psychology & English</li>
+          <li>N7- Psychology & Criminology</li>
+          <li>Class Rep for Neuropsychology (3rd year)</li>
+        </ul>
+      </aside>
+      <aside>
+        <h3>National Senior Certificate</h3>
+        <p class="description"><a href="https://www.curro.co.za/schools/creston-college-high-school/"
+            target="_blank"><em>Creston College</em></a></p>
+        <p>School qualification completed with a degree level pass</p>
+      </aside>
+      <h2 id="experience">Experience</h2>
+      <h3>March 2015-November 2015: Restaurant Manager</h3>
+      <p class="description"><a href="https://www.facebook.com/PavilionItalianRestaurant/" target="_blank"><em>Pavilion
+            Restaurant</em></a></p>
+      <p>Gap year position before heading to university</p>
       </nav>
+      <div class="container-fluid">
+        <nav>
+          <h2 id="skills"> Skills </h2>
+
+          <!--flexContainer used to create skill list below education-->
+          <div class="flexContainer">
+            <div><strong>Conflict Resolution</strong>-I maintain the ability to resolve conflict fairly and objectively
+              where possible.</div>
+            <div><strong>Time Efficiency</strong>- Time is crucial, being efficient and staying on track with deadlines
+              improve overall quality of work.</div>
+            <div><strong>Leadership</strong>-Ability to work under pressure and take the lead when need be.</div>
+            <div><strong>Adaptibility and Team Work</strong>-Being able to adapt and understand co-workers is vital,
+              team
+              management allows for an efficient running company.</div>
+            <div><strong>Communication</strong>-Communication is key to understand and to deliver important information.
+              I
+              take pride in the ability to communicate effectively.</div>
+          </div>
+        </nav>
+      </div>
     </div>
-  </div>
 
-  <!--icons linked in the head section-->
-  <div class="background">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-2">
-          <div id="personal" class="iconInfo">
-            <h3 class="info">Personal Info</h3>
-            <i class="fa-solid fa-calendar-days"></i>D.O.B: 12/04/1997
-            <i class="fa-solid fa-flag"></i>South African
-            <i class="fa-solid fa-id-card"></i>Driving Licence
-            <i class="fa-solid fa-car"></i>Personal vehicle
-          </div>
-        </div>
-
-        <!---Language column with flip-box incl.-->
-        <div class="col-sm-3">
-          <div id="language" class="lang">
-            <h3 class="speech">Languages</h3>
-            <div class="flip-box">
-              <div class="flip-box-inner">
-                <div class="flip-box-front">
-                  <img class="flags" src="images/uk.png" alt="UK Flag">
-                </div>
-                <div class="flip-box-back">
-                  <h4>English</h4>
-                  <p>Fluent</p>
-                </div>
-              </div>
-            </div>
-            <div class="flip-box">
-              <div class="flip-box-inner">
-                <div class="flip-box-front">
-                  <img class="flags" src="images/france.png" alt="French Flag" Flag">
-                </div>
-                <div class="flip-box-back">
-                  <h4>French</h4>
-                  <p>Intermediate</p>
-                </div>
-              </div>
-            </div>
-            <div class="flip-box">
-              <div class="flip-box-inner">
-                <div class="flip-box-front">
-                  <img class="flags" src="images/southafrica.png" alt="South African Flag">
-                </div>
-                <div class="flip-box-back">
-                  <h4>Afrikaans</h4>
-                  <p>Intermediate</p>
-                </div>
-              </div>
-            </div>
-            <div class="flip-box">
-              <div class="flip-box-inner">
-                <div class="flip-box-front">
-                  <img class="flags" src="images/southafrica.png" alt="South African  Flag">
-                </div>
-                <div class="flip-box-back">
-                  <h4>isiZulu</h4>
-                  <p>Beginner</p>
-                </div>
-              </div>
+    <!--icons linked in the head section-->
+    <div class="background">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3">
+            <div id="personal" class="iconInfo">
+              <h3 class="info">Personal Info</h3>
+              <i class="fa-solid fa-calendar-days"></i>D.O.B: 12/04/1997
+              <i class="fa-solid fa-flag"></i>South African
+              <i class="fa-solid fa-id-card"></i>Driving Licence
+              <i class="fa-solid fa-car"></i>Personal vehicle
             </div>
           </div>
-        </div>
 
-        <!--bootstrap cards-->
-        <div class="container">
-          <div id="interests" class="interest">
-            <h3 class="inter">Interests</h3>
-            <div class="row">
-              <div class="col">
-                <div class="card">
-                  <img src="images/reading.png" class="book" alt="Picture of animated books">
-                  <div class="card-body">
-                    <h5 class="cardR">Reading</h5>
+          <!---Language column with flip-box incl.-->
+          <div class="col-sm-3">
+            <div id="language" class="lang">
+              <h3 class="speech">Languages</h3>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img class="flags" src="images/uk.png" alt="UK Flag">
+                  </div>
+                  <div class="flip-box-back">
+                    <h4>English</h4>
+                    <p>Fluent</p>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card">
-                  <img src="images/writing.png" class="book" alt="Picture of a pen writing on paper">
-                  <div class="card-body">
-                    <h5 class="cardW">Writing</h5>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img class="flags" src="images/france.png" alt="French Flag" Flag">
+                  </div>
+                  <div class="flip-box-back">
+                    <h4>French</h4>
+                    <p>Intermediate</p>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card">
-                  <img src="images/travel.png" class="book" alt="Picture of a globe">
-                  <div class="card-body">
-                    <h5 class="cardT">Travel</h5>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img class="flags" src="images/southafrica.png" alt="South African Flag">
+                  </div>
+                  <div class="flip-box-back">
+                    <h4>Afrikaans</h4>
+                    <p>Intermediate</p>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card">
-                  <img src="images/music.png" class="book alt=" Picture of headphones and a device playing music">
-                  <div class="card-body">
-                    <h5 class="cardM">Music</h5>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img class="flags" src="images/southafrica.png" alt="South African  Flag">
                   </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img src="images/training.png" class="book" alt="Picture of a dog doing agiloty training">
-                  <div class="card-body">
-                    <h5 class="cardD">Dog Training</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img src="images/art.png" class="book" alt="Picture of paint and a paintbrush">
-                  <div class="card-body">
-                    <h5 class="cardA">Art</h5>
+                  <div class="flip-box-back">
+                    <h4>isiZulu</h4>
+                    <p>Beginner</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!--footer includes icons with links-->
-          <footer id="details">
-
-            <!--section: contact -->
-            <section class="mb-4">
-
-              <!--section heading-->
-              <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Details</h2>
-
-              <!--section: description-->
-              <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
-                contact me!</p>
+          
+          <div class="col-sm-6">
+             <!--bootstrap cards-->
+             <div id="interests" class="interest">
+              <h3 class="inter">Interests</h3>
               <div class="row">
-
-                <!--grid column-->
-                <div class="col-md-9 mb-md-0 mb-5">
-                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                    <!--grid row-->
-                    <div class="row">
-
-                      <!--grid column-->
-                      <div class="col-md-6">
-                        <div class="md-form mb-0">
-                          <input type="text" id="name" name="name" class="form-control">
-                          <label for="name" class="">Your name</label>
-                        </div>
-                      </div>
-
-                      <!--grid column-->
-                      <div class="col-md-6">
-                        <div class="md-form mb-0">
-                          <input type="text" id="email" name="email" class="form-control">
-                          <label for="email" class="">Your email</label>
-                        </div>
-                      </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="images/reading.png" class="book" alt="Picture of animated books">
+                    <div class="card-body">
+                      <h5 class="cardR">Reading & Writing</h5>
                     </div>
-
-                    <!--grid row-->
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="md-form mb-0">
-                          <input type="text" id="subject" name="subject" class="form-control">
-                          <label for="subject" class="">Subject</label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!--grid row-->
-                    <div class="row">
-
-                      <!--grid column-->
-                      <div class="col-md-12">
-                        <div class="md-form">
-                          <textarea type="text" id="message" name="message" rows="2"
-                            class="form-control md-textarea"></textarea>
-                          <label for="message">Your message</label>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                  <div class="text-center text-md-left">
-                    <a class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Send</a>
                   </div>
-                  <div class="status"></div>
                 </div>
-
-                <!--grid column-->
-                <div class="col-md-3 text-center">
-                  <ul class="list-unstyled mb-0">
-                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                      <p>Durban, KwaZulu-Natal</p>
-                    </li>
-                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                      <p>+27 79 894 0672</p>
-                    </li>
-                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                      <p>dvdvorst.7@gmail.com</p>
-                    </li>
-                  </ul>
+                <div class="col">
+                  <div class="card">
+                    <img src="images/travel.png" class="book" alt="Picture of a globe">
+                    <div class="card-body">
+                      <h5 class="cardT">Travel</h5>
+                    </div>
+                  </div>
                 </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="images/music.png" class="book alt=" Picture of headphones and a device playing music">
+                    <div class="card-body">
+                      <h5 class="cardM">Music</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="images/training.png" class="book" alt="Picture of a dog doing agiloty training">
+                    <div class="card-body">
+                      <h5 class="cardD">Dog Training</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>>
+          
+            <section class="section intro">
+              <div class="container">
+                <h1>Travels &rarr;</h1>
               </div>
             </section>
+            
+            <section class="timeline">
+              <ol>
+                <li>
+                  <div>
+                    <h2>Bulgaria</h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>Greece</h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>Zambia</h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                   <h2>Botswana</h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                   <h2>Ghana</h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                   <h2>Israel</h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                   <h2>England</h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>Germany</h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                   <h2>Austria</h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>DRC</h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                   <h2>France</h2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>Namibia</h2>
+                  </div>
+                </li>
+                <li></li>
+              </ol>
+              
+              <div class="arrows">
+                <button class="arrow arrow__prev disabled" disabled>
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
+                </button>
+                <button class="arrow arrow__next">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
+                </button>
+              </div>
+            </section>
+          </div>
 
-            <!--section: contact-->
-            <div class="container-fluid">
-              <div class="row">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                      class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                      aria-label="Slide 2"></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <a href="mailto:dvdvorst.7@gmail.com" target="_blank">
-                        <img id="gmail" class="icons" src="images/gmail_image.png" alt="D van der Vorst Gmail">
-                      </a>
+         
+            <!--footer includes icons with links-->
+            <footer id="details">
+
+              <!--section: contact -->
+              <section class="mb-4">
+
+                <!--section heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Details</h2>
+
+                <!--section: description-->
+                <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
+                  contact me!</p>
+                <div class="row">
+
+                  <!--grid column-->
+                  <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                      <!--grid row-->
+                      <div class="row">
+
+                        <!--grid column-->
+                        <div class="col-md-6">
+                          <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                          </div>
+                        </div>
+
+                        <!--grid column-->
+                        <div class="col-md-6">
+                          <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--grid row-->
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--grid row-->
+                      <div class="row">
+
+                        <!--grid column-->
+                        <div class="col-md-12">
+                          <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2"
+                              class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="text-center text-md-left">
+                      <a class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Send</a>
                     </div>
-                    <div class="carousel-item">
-                      <a href="https://github.com/Deevdv" target="_blank">
-                        <img id="github" class="icons" src="images/github_image.png" alt="D van der Vorst Github">
-                      </a>
-                    </div>
+                    <div class="status"></div>
                   </div>
-          </footer>
-          </main>
+
+                  <!--grid column-->
+                  <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                      <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>Durban, KwaZulu-Natal</p>
+                      </li>
+                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>+27 79 894 0672</p>
+                      </li>
+                      <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>dvdvorst.7@gmail.com</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <!--section: contact-->
+              <div class="container-fluid">
+                <div class="row">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href="mailto:dvdvorst.7@gmail.com" target="_blank">
+                          <img id="gmail" class="icons" src="images/gmail_image.png" alt="D van der Vorst Gmail">
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="https://github.com/Deevdv" target="_blank">
+                          <img id="github" class="icons" src="images/github_image.png" alt="D van der Vorst Github">
+                        </a>
+                      </div>
+                    </div>
+            </footer>
+            </main>
 </body>
 
 </html>
