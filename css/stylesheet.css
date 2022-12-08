@@ -26,6 +26,7 @@ body {
 }
 
 /*background image*/
+
 .background {
   background-image: url("/images/background.jpg") !important;
 }
@@ -43,14 +44,14 @@ body {
 
 /*formatting for .displayPicture*/
 
-#displayPicture {
+#borderImg {
   display: flex;
   height: 300px;
   width: 150px;
-  position: relative;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 /*h3 formatting*/
 
@@ -73,6 +74,23 @@ h2 {
   float: inline-start;
   transition: 1.5s;
   margin-left: 0;
+}
+
+/*travel text fomatting*/
+
+.country {
+  background-color: rgb(144, 131, 170);
+  text-align: center;
+  padding: 10%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font: 30px "lato", sans-serif;
+  color: #fff;
+  padding: 20px;
+  float: inline-start;
+  transition: 1.5s;
+  margin-left: 0;
+  padding-bottom: 35px;
 }
 
 .modal-title {

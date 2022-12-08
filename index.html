@@ -38,7 +38,7 @@
     <div class="row">
       <header class="mp-sm-5" id="heading">
         <div>
-          <picture class="img-rounded" id="displayPicture">
+          <picture class="imgRounded" id="borderImg">
             <source media="(max-width: 650px)" srcset="images/headshotSmall.png">
             <source media="(max-width: 1000px)" srcset="images/headshotLarge.png">
             <img src="images/headshot.jpeg" class="displayPic" alt="Picture of D van der Vorst">
@@ -73,16 +73,15 @@
     </div>
     </header>
 
-    
     <!--navbar-->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Menu</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link" href="#education">Education</a>
@@ -97,11 +96,15 @@
               <a class="nav-link" href="#personal">Personal Info</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#details">Contact Details</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#language">Languages</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#travels">Travels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#details">Contact Details</a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -197,11 +200,17 @@
       </div>
     </div>
 
-    <!--icons linked in the head section-->
+<!--grid container and background-->
     <div class="background">
       <div class="container-fluid">
+
+         <!--grid row-->
         <div class="row">
+
+           <!--grid column-->
           <div class="col-sm-3">
+
+    <!--icons linked in the head section-->
             <div id="personal" class="iconInfo">
               <h3 class="info">Personal Info</h3>
               <i class="fa-solid fa-calendar-days"></i>D.O.B: 12/04/1997
@@ -211,7 +220,7 @@
             </div>
           </div>
 
-          <!---Language column with flip-box incl.-->
+          <!---grid column with flip-box incl.-->
           <div class="col-sm-3">
             <div id="language" class="lang">
               <h3 class="speech">Languages</h3>
@@ -229,7 +238,7 @@
               <div class="flip-box">
                 <div class="flip-box-inner">
                   <div class="flip-box-front">
-                    <img class="flags" src="images/france.png" alt="French Flag" Flag">
+                    <img class="flags" src="images/france.png" alt="French Flag">
                   </div>
                   <div class="flip-box-back">
                     <h4>French</h4>
@@ -251,7 +260,7 @@
               <div class="flip-box">
                 <div class="flip-box-inner">
                   <div class="flip-box-front">
-                    <img class="flags" src="images/southafrica.png" alt="South African  Flag">
+                    <img class="flags" src="images/southafrica.png" alt="South African Flag">
                   </div>
                   <div class="flip-box-back">
                     <h4>isiZulu</h4>
@@ -261,12 +270,18 @@
               </div>
             </div>
           </div>
-          
+
+          <!--grid column-->
           <div class="col-sm-6">
-             <!--bootstrap cards-->
-             <div id="interests" class="interest">
+
+            <!--bootstrap cards-->
+            <div id="interests" class="interest">
               <h3 class="inter">Interests</h3>
+
+              <!--grid row-->
               <div class="row">
+
+                <!--grid column-->
                 <div class="col">
                   <div class="card">
                     <img src="images/reading.png" class="book" alt="Picture of animated books">
@@ -275,6 +290,8 @@
                     </div>
                   </div>
                 </div>
+
+                <!--grid column-->
                 <div class="col">
                   <div class="card">
                     <img src="images/travel.png" class="book" alt="Picture of a globe">
@@ -283,6 +300,8 @@
                     </div>
                   </div>
                 </div>
+
+                <!--grid column-->
                 <div class="col">
                   <div class="card">
                     <img src="images/music.png" class="book alt=" Picture of headphones and a device playing music">
@@ -291,6 +310,8 @@
                     </div>
                   </div>
                 </div>
+
+                 <!--grid column-->
                 <div class="col">
                   <div class="card">
                     <img src="images/training.png" class="book" alt="Picture of a dog doing agiloty training">
@@ -301,199 +322,204 @@
                 </div>
               </div>
             </div>
-          </div>>
-          
-            <section class="section intro">
-              <div class="container">
-                <h1>Travels &rarr;</h1>
-              </div>
-            </section>
-            
-            <section class="timeline">
-              <ol>
-                <li>
-                  <div>
-                    <h2>Bulgaria</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <h2>Greece</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <h2>Zambia</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                   <h2>Botswana</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                   <h2>Ghana</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                   <h2>Israel</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                   <h2>England</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <h2>Germany</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                   <h2>Austria</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <h2>DRC</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                   <h2>France</h2>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <h2>Namibia</h2>
-                  </div>
-                </li>
-                <li></li>
-              </ol>
-              
-              <div class="arrows">
-                <button class="arrow arrow__prev disabled" disabled>
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
-                </button>
-                <button class="arrow arrow__next">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
-                </button>
-              </div>
-            </section>
           </div>
 
-         
-            <!--footer includes icons with links-->
-            <footer id="details">
+          <!--timeline with js-->
+          <section id="travels" class="section intro">
+            <div class="container">
+              <h1>Travels &rarr;</h1>
+            </div>
+          </section>
 
-              <!--section: contact -->
-              <section class="mb-4">
+          <!--section with country names-->
+          <section class="timeline">
+            <ol>
+              <li>
+                <div>
+                  <p class="country">Bulgaria<p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="country">Greece</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="country">Zambia</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="country">Botswana</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="country">Ghana</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="country">Israel</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="country">England</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="country">Germany</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="country">Austria</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="country">DRC</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="country">France</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="country">Namibia</p>
+                </div>
+              </li>
+              <li></li>
+            </ol>
 
-                <!--section heading-->
-                <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Details</h2>
+            <!--arrow images and buttons-->
+            <div class="arrows">
+              <button class="arrow arrow__prev disabled" disabled>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
+              </button>
+              <button class="arrow arrow__next">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
+              </button>
+            </div>
+          </section>
+        </div>
 
-                <!--section: description-->
-                <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
-                  contact me!</p>
-                <div class="row">
 
-                  <!--grid column-->
-                  <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        <!--footer includes icons with links-->
+        <footer id="details">
 
-                      <!--grid row-->
-                      <div class="row">
+          <!--section: contact -->
+          <section class="mb-4">
 
-                        <!--grid column-->
-                        <div class="col-md-6">
-                          <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
-                          </div>
-                        </div>
+            <!--section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Details</h2>
 
-                        <!--grid column-->
-                        <div class="col-md-6">
-                          <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                          </div>
-                        </div>
+            <!--section: description-->
+            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
+              contact me!</p>
+            <div class="row">
+
+              <!--grid column-->
+              <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                  <!--grid row-->
+                  <div class="row">
+
+                    <!--grid column-->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="name" name="name" class="form-control">
+                        <label for="name" class="">Your name</label>
                       </div>
-
-                      <!--grid row-->
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!--grid row-->
-                      <div class="row">
-
-                        <!--grid column-->
-                        <div class="col-md-12">
-                          <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2"
-                              class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                    <div class="text-center text-md-left">
-                      <a class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Send</a>
                     </div>
-                    <div class="status"></div>
+
+                    <!--grid column-->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="email" name="email" class="form-control">
+                        <label for="email" class="">Your email</label>
+                      </div>
+                    </div>
                   </div>
 
-                  <!--grid column-->
-                  <div class="col-md-3 text-center">
-                    <ul class="list-unstyled mb-0">
-                      <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                        <p>Durban, KwaZulu-Natal</p>
-                      </li>
-                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                        <p>+27 79 894 0672</p>
-                      </li>
-                      <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>dvdvorst.7@gmail.com</p>
-                      </li>
-                    </ul>
+                  <!--grid row-->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <input type="text" id="subject" name="subject" class="form-control">
+                        <label for="subject" class="">Subject</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--grid row-->
+                  <div class="row">
+
+                    <!--grid column-->
+                    <div class="col-md-12">
+                      <div class="md-form">
+                        <textarea type="text" id="message" name="message" rows="2"
+                          class="form-control md-textarea"></textarea>
+                        <label for="message">Your message</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="text-center text-md-left">
+                  <a class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                <div class="status"></div>
+              </div>
+
+              <!--grid column-->
+              <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                  <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Durban, KwaZulu-Natal</p>
+                  </li>
+                  <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+27 79 894 0672</p>
+                  </li>
+                  <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>dvdvorst.7@gmail.com</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!--section: contact-->
+          <div class="container-fluid">
+            <div class="row">
+
+              <!--bootstrap carousel-->
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="mailto:dvdvorst.7@gmail.com" target="_blank">
+                      <img id="gmail" class="icons" src="images/gmail_image.png" alt="D van der Vorst Gmail">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://github.com/Deevdv" target="_blank">
+                      <img id="github" class="icons" src="images/github_image.png" alt="D van der Vorst Github">
+                    </a>
                   </div>
                 </div>
-              </section>
-
-              <!--section: contact-->
-              <div class="container-fluid">
-                <div class="row">
-                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <a href="mailto:dvdvorst.7@gmail.com" target="_blank">
-                          <img id="gmail" class="icons" src="images/gmail_image.png" alt="D van der Vorst Gmail">
-                        </a>
-                      </div>
-                      <div class="carousel-item">
-                        <a href="https://github.com/Deevdv" target="_blank">
-                          <img id="github" class="icons" src="images/github_image.png" alt="D van der Vorst Github">
-                        </a>
-                      </div>
-                    </div>
-            </footer>
-            </main>
+        </footer>
+        </main>
 </body>
 
 </html>

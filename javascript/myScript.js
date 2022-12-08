@@ -98,7 +98,7 @@
       hammer.on("swiperight", () => prev.click());
     }
   
-    // ADD BASIC KEYBOARD FUNCTIONALITY
+    // basic keyboard functionality
     function setKeyboardFn(prev, next) {
       document.addEventListener("keydown", (e) => {
         if ((e.which === 37) || (e.which === 39)) {
